@@ -351,10 +351,10 @@ pip install flask
 ### 5) 테스트
 
 1. **hello.py 파일 만들기**
-2. **기본 어플리케이션 설정**
+2. **기본 어플리케이션 설정(원래 기본은 app)**
    
     ```bash
-    export FLASK_APP=hello.py
+    export FLASK_APP=hello
     ```
     
 3. **Flask 실행**
@@ -364,6 +364,7 @@ pip install flask
     ```
     
 4. **[http://127.0.0.1:5000](http://127.0.0.1:5000/) 접속**
+    -> Hello, World!
 
 ---
 
