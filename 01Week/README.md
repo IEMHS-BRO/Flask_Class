@@ -289,9 +289,9 @@ Flask의 경우, 지원기능이 적은만큼 필요한 기능을 구현해야 �
     파이썬을 특정 버전으로 지정하여 설치 가능
     
     ```bash
-    conda create -name (가상환경 이름) python=(버전)
+    conda create -n (가상환경 이름) python=(버전)
     
-    conda create --name flask_class python=3.8
+    conda create --n flask_class python=3.8
     ```
     
 2. **가상환경 리스트 조회**
