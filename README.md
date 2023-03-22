@@ -9,7 +9,7 @@
 ## 과정은 어떻게 되나요?
 | 회차 | 주제 | 자료 |
 | --- | :--- | --- |
-| 01 | 오리엔테이션 | |
+| 01 | 오리엔테이션 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session01) |
 | 02 | Flask 기초 | |
 | 03 | RestAPI와 요구사항 | |
 | 04 | Flask와 데이터베이스 | |
