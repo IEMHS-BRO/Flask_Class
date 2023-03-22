@@ -1,6 +1,3 @@
-# Table of contents
-
-- [1주차](#1주차)
 - [0. 허성진 소개](#0-허성진-소개)
 - [1. 수업은 어떻게 진행하나요?](#1-수업은-어떻게-진행하나요)
 - [2. 우리는 무엇을 하려는 건가요?](#2-우리는-무엇을-하려는-건가요)
@@ -17,25 +14,21 @@
 
 <br><br>
 
-# 1주차
-
-수업 일정: 2022/04/16
-
 # 0. 허성진 소개
 
 - 이름: 허성진
 - 학교: 인천전자마이스터고 정보통신과 8기 졸업
 - 회사: (주)인포마이닝(2020.01~)
-- 포지션: iOS 모바일 개발
+- 직무: iOS Developer
 
 # 1. 수업은 어떻게 진행하나요?
 
 > **Github Organization을 통해서 공유**
 URL: [https://github.com/IEMHS-BRO](https://github.com/IEMHS-BRO)
 > 
-- 2022_Flask_Class 레포지토리로 공유합니다.
+- `Flask_Class` 레포지토리로 공유합니다.
 - 질문은 Issue에 올려주면 답변을 해드립니다.
-- Git, Github과 친하게 지내봅니다.(저도 친해지는 중입니다...ㅎ)
+- Git, Github과 친하게 지내봅니다. (저도 친해지는 중입니다...ㅎ)
 
 > **Why → How to**
 > 
@@ -55,7 +48,7 @@ URL: [https://github.com/IEMHS-BRO](https://github.com/IEMHS-BRO)
 
 ### **아래와 같은 복잡한 이론적 개발 절차는 나중에 필요할 때 이해해도 됩니다.**
 
-![Untitled](img/Untitled.png)
+![image](https://user-images.githubusercontent.com/46991314/226987573-6d02189f-747a-4f99-a90b-457f1a506a45.png)
 
 ### 최대한 직관적으로, 이해하기 쉽게! (이론 베이스가 아니다보니, 용어가 다를 수 있음)
 
@@ -114,14 +107,14 @@ URL: [https://github.com/IEMHS-BRO](https://github.com/IEMHS-BRO)
 
 ## 2-2. 소프트웨어 구성원의 역할
 
-![Untitled](img/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/46991314/226987737-33c45a00-c52a-4a4f-9b95-ce58965aa835.png)
 
 > **백엔드는 서버와의 통신, 그리고 프론트와의 통신을 관리합니다. 서버와의 통신으로 데이터를 저장하고 프론트와의 통신으로 데이터를 출력합니다.**
 > 
 
 ## 2-3. 학습 목표 (최종적으로 알려주고 싶은 것.)
 
-> 🔥 **MySQL(DB)을 거느릴 수 있는 API를 제공하는 백엔드 개발자!**🔥
+> **DB를 거느릴 수 있는 API를 제공하는 백엔드 개발자 🔥**
 > 
 
 # 3. 왜 Flask인가요?
@@ -264,7 +257,7 @@ Flask의 경우, 지원기능이 적은만큼 필요한 기능을 구현해야 �
     
 2. **환경변수 설정 부분에서는 그림의 박스 부분을 체크한다. (아나콘다를 환경변수에 추가하는 설정이다. 체크를 안하면 수동으로 추가를 해야한다.)**
    
-    ![Untitled](img/Untitled%203.png)
+    ![image](https://user-images.githubusercontent.com/46991314/226988133-dd29034b-57bf-4618-aace-e56b151f5d6e.png)
     
 3. **Anaconda Prompt 실행**
 4. **설치 확인**
@@ -285,41 +278,39 @@ Flask의 경우, 지원기능이 적은만큼 필요한 기능을 구현해야 �
 ### 2) Anaconda 가상환경 생성
 
 1. **가상환경 생성**
-   
+    
     파이썬을 특정 버전으로 지정하여 설치 가능
     
     ```bash
-    conda create -n (가상환경 이름) python=(버전)
-    
-    conda create --n flask_class python=3.8
+    # conda create -n (가상환경 이름) python=(버전)
+    conda create -n flask_class python=3.8
     ```
     
 2. **가상환경 리스트 조회**
-   
+    
     ```bash
     conda env list
     ```
     
-3. **생성된 가상환경 삭제(패키지 포함)**
-   
-    ```bash
-    conda remove -n (가상환경 이름) --all
-    ```
+3. **가상환경 활성화**
     
-4. **가상환경 활성화**
-   
     활성화 시 명령줄 좌측에 (base)가 가상환경 이름으로 변경됨.
     
     ```bash
-    conda activate (가상환경 이름)
-    
+    #conda activate (가상환경 이름)
     conda activate flask_class
     ```
     
-5. 현재 **가상환경 비활성화**
-   
+4. 현재 **가상환경 비활성화**
+    
     ```bash
     conda deactivate
+    ```
+    
+- **생성된 가상환경 삭제(패키지 포함)**
+    
+    ```bash
+    conda remove -n (가상환경 이름) --all
     ```
     
 
