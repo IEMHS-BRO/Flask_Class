@@ -345,7 +345,7 @@ pip install flask
 2. **기본 어플리케이션 설정(원래 기본은 app)**
    
     ```bash
-    export FLASK_APP=hello
+    set FLASK_APP=hello
     ```
     
 3. **Flask 실행**
