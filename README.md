@@ -10,9 +10,9 @@
 | 회차 | 주제 | 자료 |
 | --- | :--- | --- |
 | 01 | 오리엔테이션 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session01) |
-| 02 | Flask 기초 | https://www.notion.so/lucasheo/2-5c752774961544e0956bc867e40fedc4 |
-| 03 | RestAPI와 요구사항 | |
-| 04 | Flask와 데이터베이스 | |
+| 02 | Flask 기초와 RestAPI | https://www.notion.so/lucasheo/2-5c752774961544e0956bc867e40fedc4 |
+| 03 | Flask와 데이터베이스(1) | |
+| 04 | Flask와 데이터베이스(2) | |
 | 05 | 중고 마켓 앱 만들기(1) - 요구사항 분석, 데이터 설계 | |
 | 06 | 중고 마켓 앱 만들기(2) - OAuth, JWT | |
 | 07 | 중고 마켓 앱 만들기(3) - API 구현 | |
