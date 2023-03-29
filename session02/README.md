@@ -1,3 +1,10 @@
+- [1. 안녕 Flask](#1-)
+- [2. Flask로 백엔드는 어떻게 하는건가요?](#2-)
+- [3. Posman](#3-)
+- [4. RestAPI](#4-)
+- [5. Request Context](#5-)
+- [6. 요약](#6-)
+
 # 1. 안녕 Flask!
 
 ## 1-1. hello.py 파헤쳐 보기
@@ -93,7 +100,7 @@ python hello.py
 
 - **J**ava**S**cript **O**bject **N**otation
 - 사람이 읽을 수 있는 경량화된 텍스트 기반의 데이터 교환 **표준**
-- 우리가 잘 알고 있는 **XML(eXtensible Markup Language)**도 서로 다른 언어들간의 데이터 교환, 사람이 볼 수 있는 정보 표기, 쉽구 단순한 구성 등을 목표로 만들어진 데이터 교환방식 중의 하나인데 이보다 좀 더 쉽고 가볍게 만들어진 것이 **JSON**
+- 우리가 잘 알고 있는 **XML(eXtensible Markup Language)** 도 서로 다른 언어들간의 데이터 교환, 사람이 볼 수 있는 정보 표기, 쉽구 단순한 구성 등을 목표로 만들어진 데이터 교환방식 중의 하나인데 이보다 좀 더 쉽고 가볍게 만들어진 것이 **JSON**
 - 속성-값(attribute-value) 구조
     - 자료형(Number, String, Boolean, Array, Object, Null)
 
