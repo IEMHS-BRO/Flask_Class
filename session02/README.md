@@ -1,9 +1,17 @@
-- [1. 안녕 Flask](#1.-)
-- [2. Flask로 백엔드는 어떻게 하는건가요?](#2.-)
-- [3. Posman](#3.-)
-- [4. RestAPI](#4.-)
-- [5. Request Context](#5.-)
-- [6. 요약](#6.-)
+- [1. 안녕 Flask!](#1-안녕-flask)
+  * 1-1. hello.py 파헤쳐 보기
+  * 1-2. 디버그 모드 활성화
+- [2. Flask로 백엔드는 어떻게 하는건가요?](#2-flask로-백엔드는-어떻게-하는건가요)
+  * 2-1. 어떤 형식으로 데이터를 주고 받을까
+  * 2-2. 백엔드 예시
+  * 2-3. Html 띄워보기(render_template)
+- [3. Postman](#3-postman)
+    + 가이드
+- [4. RestAPI](#4-restapi)
+  * 4-1. API는 무엇인가
+  * 4-2. RESTful을 훑어보자
+- [5. Request Context](#5-request-context)
+- [6. 요약](#6-요약)
 
 # 1. 안녕 Flask!
 
