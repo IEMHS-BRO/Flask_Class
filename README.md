@@ -12,7 +12,7 @@
 | 01 | 오리엔테이션 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session01) |
 | 02 | Flask 기초와 RestAPI | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session02) |
 | 03 | Flask와 데이터베이스(1) - 환경 구축 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session03) |
-| 04 | Flask와 데이터베이스(2) - SQLAlchemy | https://www.notion.so/lucasheo/4-9852044f638c4d3aa4ab712cd0bd2471?pvs=4 |
+| 04 | Flask와 데이터베이스(2) - SQLAlchemy | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session04) |
 | 05 | 중고 마켓 앱 만들기(1) - 프로젝트 시작하기 | |
 | 06 | 중고 마켓 앱 만들기(2) - OAuth, JWT | |
 | 07 | 중고 마켓 앱 만들기(3) - API 구현 | |
