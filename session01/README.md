@@ -217,7 +217,7 @@ Flask의 경우, 지원기능이 적은만큼 필요한 기능을 구현해야 �
 
 ## 3-2. 요즘 스타트업들이 Python+Flask로 개발하고 Java+Spring으로 넘어간다
 
-![Untitled](img/Untitled%202.png)
+![image](https://user-images.githubusercontent.com/46991314/230729359-6d6fe3bc-fbf6-4a44-8639-c97c43cebd92.png)
 
 # 4. 개발 환경 세팅
 
