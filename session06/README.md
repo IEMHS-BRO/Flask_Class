@@ -59,7 +59,7 @@ JWT와 OAuth를 한 번에 접하게 되면 두 가지의 개념을 명확하게
 
 **→ 토큰에 정보가 포함되어있는 것!**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8acb7df2-9420-407a-bc83-9895f013b222/Untitled.png)
+![image](https://github.com/IEMHS-BRO/Flask_Class/assets/46991314/44587ff7-1376-4e92-a9aa-653cd9d99195)
 
 # 4. 실습해보자(JWT)
 
