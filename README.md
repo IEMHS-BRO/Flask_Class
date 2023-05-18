@@ -14,7 +14,7 @@
 | 03 | Flask와 데이터베이스(1) - 환경 구축 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session03) |
 | 04 | Flask와 데이터베이스(2) - SQLAlchemy | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session04) |
 | 05 | 중고 마켓 앱 만들기(1) - 프로젝트 시작하기 | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session05) |
-| 06 | 중고 마켓 앱 만들기(2) - OAuth, JWT | |
+| 06 | 중고 마켓 앱 만들기(2) - OAuth, JWT | [자료](https://github.com/IEMHS-BRO/Flask_Class/tree/main/session06) |
 | 07 | 중고 마켓 앱 만들기(3) - API 구현 | |
 | 08 | 중고 마켓 앱 만들기(4) - 배포, 개발 문서 작성 | |
 | 09 | 중고 마켓 앱 만들기(5) - 도메인 연결, 회고 | |
