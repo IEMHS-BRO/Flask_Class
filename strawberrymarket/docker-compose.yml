@@ -28,6 +28,7 @@ services:
       - sm-db
     volumes:
       - ./:/var/www/strawberrymarket
+      - smvolume:/var/www/strawberrymarket/app/static
       - smsocket:/tmp
     restart: always
     environment:
