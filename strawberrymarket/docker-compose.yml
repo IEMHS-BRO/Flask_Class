@@ -1,5 +1,19 @@
 version: '3.7'
 services:
+  sm-nginx:
+    container_name: sm-nginx
+    image: nginx
+    restart: always
+    volumes:
+      - ./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - smsocket:/tmp
+    networks:
+      - smnet
+    depends_on:
+      - sm-web
+    ports:
+      - 80:80
+
   sm-web:
     container_name: sm-web
     image: sm-web
@@ -12,6 +26,7 @@ services:
       - sm-db
     volumes:
       - ./:/var/www/strawberrymarket
+      - smsocket:/tmp
     restart: always
     environment:
       - FLASK_APP=app
@@ -41,3 +56,4 @@ networks:
 
 volumes:
   smvolume:
+  smsocket:
