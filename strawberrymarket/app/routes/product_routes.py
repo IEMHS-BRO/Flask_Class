@@ -65,9 +65,9 @@ def update_product_info(product_id):
     print(request.files)
     product = Product.query.get(product_id)
     if not product:
-        return jsonify({'message': 'Product not found'}), 404
+        return jsonify({'msg': 'Product not found'}), 404
     if product.user_id != get_jwt_identity():
-        return jsonify({'message': 'Not authorized to update this product'}), 403
+        return jsonify({'msg': 'Not authorized to update this product'}), 403
 
     json_data = request.form.get('json_data')
     data = json.loads(json_data)
@@ -93,9 +93,9 @@ def update_product_info(product_id):
 def delete_product(product_id):
     product = Product.query.get(product_id)
     if not product:
-        return jsonify({'message': 'Product not found'}), 404
+        return jsonify({'msg': 'Product not found'}), 404
     if product.user_id != get_jwt_identity():
-        return jsonify({'message': 'Not authorized to delete this product'}), 403
+        return jsonify({'msg': 'Not authorized to delete this product'}), 403
 
     # 이미지 삭제
     if product.image_url:
@@ -104,4 +104,4 @@ def delete_product(product_id):
     db.session.delete(product)
     db.session.commit()
 
-    return jsonify({'message': 'Product deleted successfully'}), 200
+    return jsonify({'msg': 'Product deleted successfully'}), 200

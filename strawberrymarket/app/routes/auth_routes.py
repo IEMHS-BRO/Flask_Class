@@ -14,7 +14,7 @@ def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
     if not user or not user.verify_password(data['password']):
-        return jsonify({'message': 'Invalid username or password'}), 401
+        return jsonify({'msg': 'Invalid username or password'}), 401
     access_token = create_access_token(identity=user.id, expires_delta=timedelta(minutes=30))
     return jsonify(access_token=access_token), 200
 
@@ -29,7 +29,7 @@ def register():
     new_user.hash_password(data['password'])
     db.session.add(new_user)
     db.session.commit()
-    return jsonify({'message': 'User created successfully'}), 201
+    return jsonify({'msg': 'User created successfully'}), 201
 
 
 '''
