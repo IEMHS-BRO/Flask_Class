@@ -6,13 +6,15 @@ services:
     restart: always
     volumes:
       - ./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./etc/nginx/ssl/certificate:/etc/nginx/ssl/certificate.crt
+      - ./etc/nginx/ssl/private.key:/etc/nginx/ssl/private.key
       - smsocket:/tmp
     networks:
       - smnet
     depends_on:
       - sm-web
     ports:
-      - 80:80
+      - 443:443
 
   sm-web:
     container_name: sm-web
