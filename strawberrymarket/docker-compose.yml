@@ -1,0 +1,43 @@
+version: '3.7'
+services:
+  sm-web:
+    container_name: sm-web
+    image: sm-web
+    build: .
+    networks:
+      - smnet
+    ports:
+      - 8080:8080
+    depends_on:
+      - sm-db
+    volumes:
+      - ./:/var/www/strawberrymarket
+    restart: always
+    environment:
+      - FLASK_APP=app
+      - FLASK_ENV=${FLASK_ENV:-development}
+      - SQLALCHEMY_DATABASE_URI=${SQLALCHEMY_DATABASE_URI}
+    command: ['sh', './etc/docker-entrypoint.sh']
+
+  sm-db:
+    container_name: sm-db
+    image: mysql:5.7
+    networks:
+      - smnet
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: strawberrymarket
+    command:
+      - --character-set-server=utf8
+      - --collation-server=utf8_general_ci
+    ports:
+      - 3306:3306
+    volumes:
+      - smvolume:/var/lib/mysql
+    restart: always
+
+networks:
+  smnet:
+
+volumes:
+  smvolume:

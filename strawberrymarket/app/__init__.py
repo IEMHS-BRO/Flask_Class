@@ -9,6 +9,7 @@ migrate = Migrate()
 jwt = JWTManager()
 
 def create_app():
+    print("run: create_app()")
     app = Flask(__name__)
     
     """=== Flask Configuration ==="""
