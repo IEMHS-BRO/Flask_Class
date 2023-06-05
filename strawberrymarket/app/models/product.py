@@ -15,7 +15,7 @@ class Product(db.Model):
     user = db.relationship('User', backref='products')
 
 
-    def to_json(self):
+    def serialize(self):
         return {
             'id': self.id,
             'image_url': self.image_url,
@@ -24,5 +24,5 @@ class Product(db.Model):
             'description': self.description,
             'created_at': self.created_at.strftime("%Y-%m-%d %H:%M:%S"),
             'updated_at': self.updated_at.strftime("%Y-%m-%d %H:%M:%S"),
-            'user': self.user.to_json()
+            'user': self.user.serialize()
         }

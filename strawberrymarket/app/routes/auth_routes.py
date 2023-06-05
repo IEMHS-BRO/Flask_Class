@@ -52,4 +52,4 @@ def auto_login():
 def get_user_info():
     user_id = get_jwt_identity()
     user = User.query.get(user_id)
-    return jsonify(user.to_json()), 200
+    return jsonify(user.serialize()), 200

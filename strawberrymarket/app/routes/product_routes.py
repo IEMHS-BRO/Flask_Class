@@ -21,7 +21,7 @@ def get_products():
     else:
         products = Product.query.all()
     
-    return jsonify([product.to_json() for product in products]), 200
+    return jsonify([product.serialize() for product in products]), 200
 
 
 '''
@@ -43,7 +43,7 @@ def create_product():
     db.session.add(new_product)
     db.session.commit()
 
-    return jsonify(new_product.to_json()), 201
+    return jsonify(new_product.serialize()), 201
 
 
 '''
@@ -53,7 +53,7 @@ def create_product():
 @jwt_required()
 def get_product_info(product_id):
     product = Product.query.get(product_id)
-    return jsonify(product.to_json()), 200
+    return jsonify(product.serialize()), 200
 
 
 '''
@@ -82,7 +82,7 @@ def update_product_info(product_id):
     product.description = data['description']
     db.session.commit()
 
-    return jsonify(product.to_json()), 200
+    return jsonify(product.serialize()), 200
 
 
 '''
