@@ -25,8 +25,13 @@ def login():
 @bp.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
+    existing_user = User.query.filter_by(username=data['username']).first()
+    if existing_user:
+        return jsonify({'msg': 'Username already exists'}), 409
+
     new_user = User(username=data['username'], name=data['name'], phone=data['phone'])
     new_user.hash_password(data['password'])
+
     db.session.add(new_user)
     db.session.commit()
     return jsonify({'msg': 'User created successfully'}), 201
