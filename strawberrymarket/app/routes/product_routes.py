@@ -21,7 +21,7 @@ def get_products():
     else:
         products = Product.query.all()
     
-    return jsonify([product.serialize() for product in products]), 200
+    return jsonify(products=[product.serialize() for product in products]), 200
 
 
 '''
